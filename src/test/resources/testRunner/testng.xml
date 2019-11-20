@@ -16,15 +16,15 @@
     	</methods>
     	</class>
     </classes>
-  </test> <!-- Test -->
+  </test>  <!-- Test -->
   
-   <test name="Second Test" parallel ="methods" thread-count = "2">
+   <test name="Second Test" parallel ="methods" thread-count = "1">
    <parameter name = "browser" value = "firefox" />
     <classes>
     	<class name="com.qa.newtours.tests.RegistrationPageTests">
     	<methods>
     		<include name = "verifyUserRegistrationTest" />
-    		<include name = "verifyRegistrationPageTitleTest" />
+    		<include name = "verifyRegistrationPageTitleTest" /> 
     	</methods>
     	</class>
     </classes>

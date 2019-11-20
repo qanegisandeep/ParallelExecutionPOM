@@ -14,7 +14,7 @@ public class LandingPageTests extends TestBase{
 	@Test
 	public void verifyLandingPageTitle() {
 			newTourLandingPage = new NewTourLandingPage(TLDriverFactory.getTLDriver());
-			Assert.assertEquals(newTourLandingPage.title(), "Register: Mercury Tours", "Not on Registration page");
+			Assert.assertEquals(newTourLandingPage.title(), "Welcome: Mercury Tours", "Not on Registration page");
 		}
 	
 }

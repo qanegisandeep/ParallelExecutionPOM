@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Nov 19 21:43:19 IST 2019</td>
+<td>Started on:</td><td>Wed Nov 20 15:36:46 IST 2019</td>
 </tr>
-<tr><td>Total time:</td><td>21 seconds (21950 ms)</td>
+<tr><td>Total time:</td><td>47 seconds (47111 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,13 +76,17 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.qa.newtours.tests.LandingPageTests.verifyLandingPageTitle()'><b>verifyLandingPageTitle</b><br>Test class: com.qa.newtours.tests.LandingPageTests</td>
-<td><div><pre>java.lang.AssertionError: Not on Registration page expected [Register: Mercury Tours] but found [Welcome: Mercury Tours]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at com.qa.newtours.tests.LandingPageTests.verifyLandingPageTitle(LandingPageTests.java:21)
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain &quot;Welcome: Mercury Tours&quot;. Current title: &quot;&quot; (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Sandeeps-MacBook-Air.local&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.6&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 70.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191030021342, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 37638, moz:profile: /var/folders/fj/116hfs353pn..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.7.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 92eddc4c-c9ab-3947-9a8e-22fec2eba96c
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.newtours.utility.ElementUtility.waitForTitlePresent(ElementUtility.java:49)
+	at com.qa.newtours.pages.NewTourLandingPage.&lt;init&gt;(NewTourLandingPage.java:22)
+	at com.qa.newtours.tests.LandingPageTests.verifyLandingPageTitle(LandingPageTests.java:16)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -96,14 +100,18 @@ function toggleAllBoxes() {
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2052585186", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2052585186'><pre>java.lang.AssertionError: Not on Registration page expected [Register: Mercury Tours] but found [Welcome: Mercury Tours]
-	at org.testng.Assert.fail(Assert.java:96)
-	at org.testng.Assert.failNotEquals(Assert.java:776)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:453)
-	at com.qa.newtours.tests.LandingPageTests.verifyLandingPageTitle(LandingPageTests.java:21)
+</pre></div><a href='#' onClick='toggleBox("stack-trace471011306", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace471011306'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain &quot;Welcome: Mercury Tours&quot;. Current title: &quot;&quot; (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;Sandeeps-MacBook-Air.local&apos;, ip: &apos;192.168.0.2&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.13.6&apos;, java.version: &apos;1.8.0_221&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 70.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191030021342, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 37638, moz:profile: /var/folders/fj/116hfs353pn..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.7.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 92eddc4c-c9ab-3947-9a8e-22fec2eba96c
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at com.qa.newtours.utility.ElementUtility.waitForTitlePresent(ElementUtility.java:49)
+	at com.qa.newtours.pages.NewTourLandingPage.&lt;init&gt;(NewTourLandingPage.java:22)
+	at com.qa.newtours.tests.LandingPageTests.verifyLandingPageTitle(LandingPageTests.java:16)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -118,7 +126,7 @@ function toggleAllBoxes() {
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
 </pre></div></td>
-<td>0</td>
+<td>20</td>
 <td>com.qa.newtours.tests.LandingPageTests@f6c48ac</td></tr>
 </table><p>
 </body>

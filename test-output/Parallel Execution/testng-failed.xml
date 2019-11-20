@@ -13,16 +13,4 @@
       </class> <!-- com.qa.newtours.tests.LandingPageTests -->
     </classes>
   </test> <!-- First Test(failed) -->
-  <test thread-count="2" verbose="3" name="Second Test(failed)" parallel="methods">
-    <parameter name="browser" value="firefox"/>
-    <classes>
-      <class name="com.qa.newtours.tests.RegistrationPageTests">
-        <methods>
-          <include name="tearDownTest"/>
-          <include name="verifyUserRegistrationTest"/>
-          <include name="setUpTest"/>
-        </methods>
-      </class> <!-- com.qa.newtours.tests.RegistrationPageTests -->
-    </classes>
-  </test> <!-- Second Test(failed) -->
 </suite> <!-- Failed suite [Parallel Execution] -->
