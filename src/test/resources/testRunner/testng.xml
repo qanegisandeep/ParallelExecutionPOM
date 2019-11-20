@@ -3,9 +3,9 @@
 
 <suite name="Parallel Execution" parallel = "tests" thread-count ="2" verbose="3">
  
-<!--   <listeners>
+  <listeners>
 	<listener class-name="com.qa.newtours.listeners.ExtentReportListener" />
- </listeners> -->
+ </listeners>
  
   <test name="First Test" parallel ="methods" thread-count ="1" >
   <parameter name = "browser" value = "chrome" />

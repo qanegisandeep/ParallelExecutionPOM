@@ -18,9 +18,9 @@ import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.ChartLocation;
 import com.aventstack.extentreports.reporter.configuration.Theme;
-import com.qa.newtours.basepage.BasePage;
+import com.qa.newtours.factory.TLDriverFactory;
 
-public class ExtentReportListener extends BasePage implements ITestListener {
+public class ExtentReportListener extends TLDriverFactory implements ITestListener {
 
 	private static final String OUTPUT_FOLDER = "./AutomationReports/";
 	private static final String FILE_NAME = "TestExecutionReport.html";
